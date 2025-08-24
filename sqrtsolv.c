@@ -1,6 +1,6 @@
-//----------------------------------------    
-//Решение уравнений типа ax^2 + bx + c = 0    
-                    
+//----------------------------------------
+//Решение уравнений типа ax^2 + bx + c = 0
+
 
 
 
@@ -15,9 +15,9 @@ typedef struct {
 } Roots;
 
 
-//@param [in]  a  кожффицент a                           
-//@param [in]  b  коэффицент b                           
-//@param [in]  c  коэффицент c                           
+//@param [in]  a  кожффицент a
+//@param [in]  b  коэффицент b
+//@param [in]  c  коэффицент c
 //@param [out] вывод вида уравнения на экран пользователя
 
 
@@ -46,17 +46,17 @@ void input_coeff(double *a, double *b, double *c) {
 }
 
 
-//@param [in]  a  кожффицент a                
-//@param [in]  b  коэффицент b                
-//@param [in]  c  коэффицент c                
+//@param [in]  a  кожффицент a
+//@param [in]  b  коэффицент b
+//@param [in]  c  коэффицент c
 //@param [out] discrim вывод дискриминанта уравнения
 
 double cal_discrim(double a, double b, double c) {
     return b * b - 4 * a * c;
 }
-              
-//@param [in]  b  коэффицент b                
-//@param [in]  c  коэффицент c                
+
+//@param [in]  b  коэффицент b
+//@param [in]  c  коэффицент c
 //@param [out] roots инфрмация о количестве корней и их значения (первый корень)
 
 Roots solve_linear(double b, double c) {
@@ -79,9 +79,9 @@ Roots solve_linear(double b, double c) {
     return roots;
 }
 
-//@param [in]  a  кожффицент a                
-//@param [in]  b  коэффицент b                
-//@param [in]  c  коэффицент c                
+//@param [in]  a  кожффицент a
+//@param [in]  b  коэффицент b
+//@param [in]  c  коэффицент c
 //@param [out] roots вывод значения второго корня
 
 Roots solve_quadr(double a, double b, double c) {
@@ -104,9 +104,9 @@ Roots solve_quadr(double a, double b, double c) {
     return roots;
 }
 
-//@param [in]  roots  корни уравнения               
-//@param [in]  x1 первый корень уравнения             
-//@param [in]  x2 второй корень уравнения              
+//@param [in]  roots  корни уравнения
+//@param [in]  x1 первый корень уравнения
+//@param [in]  x2 второй корень уравнения
 
 void print_res(Roots roots) {
     printf("\n==== РЕЗУЛЬТАТЫ ====\n");
@@ -150,4 +150,3 @@ int main() {
 
     return 0;
 }
- double x1 = 0, x2 = 0;
